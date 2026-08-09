@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="AJAY NXT — Creative web development, interactive websites, digital experiences and video editing by Ajay Saini." />
+  <title>AJAY NXT — Creative Web Developer & Video Editor</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/videos/hero-scroll.mp4" as="video" type="video/mp4" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="AJAY NXT home">
+      <span class="brand-mark">A</span>
+      <span>AJAY NXT</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#demos">Demos</a>
+      <a href="#motion">Video</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero-scroll" id="hero">
+      <div class="hero-sticky">
+        <video
+          id="heroVideo"
+          class="hero-video"
+          muted
+          playsinline
+          preload="auto"
+          poster="assets/posters/hero-poster.jpg"
+          aria-label="Cinematic AJAY NXT hero animation"
+        >
+          <source src="assets/videos/hero-scroll.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-vignette"></div>
+
+        <div class="hero-copy hero-copy-a is-active" data-hero-copy="0">
+          <p class="eyebrow">Creative Web Developer · Video Editor</p>
+          <h1>AJAY<br><span>NXT</span></h1>
+          <p class="hero-lede">I build digital experiences that move.</p>
+        </div>
+
+        <div class="hero-copy hero-copy-b" data-hero-copy="1">
+          <p class="eyebrow">Web · Motion · Interaction</p>
+          <h2>Not just pages.<br><span>Experiences.</span></h2>
+        </div>
+
+        <div class="hero-copy hero-copy-c" data-hero-copy="2">
+          <p class="eyebrow">Built to be remembered</p>
+          <h2>Design with<br><span>momentum.</span></h2>
+        </div>
+
+        <a class="scroll-cue" href="#work">
+          <span>Scroll to explore</span>
+          <span class="scroll-line" aria-hidden="true"></span>
+        </a>
+
+        <div class="hero-progress" aria-hidden="true">
+          <span id="heroProgress"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="work">
+      <div class="section-kicker reveal">01 / Selected work</div>
+      <div class="intro-grid">
+        <h2 class="display-title reveal">Ideas become interfaces.<br><span>Interfaces become experiences.</span></h2>
+        <p class="intro-copy reveal">I design and build modern websites with motion, responsive layouts, strong visual hierarchy and polished interactions. The goal is simple: make the first scroll feel worth the visit.</p>
+      </div>
+
+      <div class="featured-grid">
+        <article class="project-card project-card-wide reveal">
+          <a href="https://diamondrestaurants.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Diamond Restaurants website">
+            <div class="project-visual visual-diamond">
+              <div class="project-wordmark">DIAMOND</div>
+              <div class="project-orbit orbit-a"></div>
+              <div class="project-orbit orbit-b"></div>
+              <span class="project-index">CLIENT / 01</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <span class="pill">Live client work</span>
+                <h3>Diamond Restaurants</h3>
+                <p>Restaurant · Bakery · Sweets</p>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <a href="https://jewellery.ajaynxt.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Celestique Jewellery demo">
+            <div class="project-visual visual-jewellery">
+              <span class="project-index">DEMO / 02</span>
+              <div class="gem-shape" aria-hidden="true"></div>
+              <div class="project-wordmark small">CELESTIQUE</div>
+            </div>
+            <div class="project-meta">
+              <div><span class="pill">Luxury retail</span><h3>Celestique Jewellery</h3></div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <a href="https://hotel.ajaynxt.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Rajmahal Lake Palace demo">
+            <div class="project-visual visual-palace">
+              <span class="project-index">DEMO / 03</span>
+              <div class="palace-arch" aria-hidden="true"></div>
+              <div class="project-wordmark small">RAJMAHAL</div>
+            </div>
+            <div class="project-meta">
+              <div><span class="pill">Hospitality</span><h3>Rajmahal Lake Palace</h3></div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card project-card-wide reveal">
+          <a href="https://diagnostic.ajaynxt.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Mediora Diagnostics demo">
+            <div class="project-visual visual-mediora">
+              <span class="project-index">DEMO / 04</span>
+              <div class="pulse-line" aria-hidden="true"></div>
+              <div class="project-wordmark">MEDIORA</div>
+            </div>
+            <div class="project-meta">
+              <div><span class="pill">Healthcare</span><h3>Mediora Diagnostics</h3><p>Precision-led diagnostic experience</p></div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demos">
+      <div class="demo-heading reveal">
+        <div>
+          <div class="section-kicker">02 / Demo library</div>
+          <h2 class="display-title">25 live demos.<br><span>One playground.</span></h2>
+        </div>
+        <a class="text-link" href="https://demos.ajaynxt.com/" target="_blank" rel="noopener noreferrer">Open demo hub ↗</a>
+      </div>
+
+      <div class="filter-row reveal" id="demoFilters" aria-label="Filter demo websites">
+        <button class="filter-chip is-active" type="button" data-filter="all">All 25</button>
+        <button class="filter-chip" type="button" data-filter="hospitality">Hospitality</button>
+        <button class="filter-chip" type="button" data-filter="healthcare">Healthcare</button>
+        <button class="filter-chip" type="button" data-filter="property">Real Estate</button>
+        <button class="filter-chip" type="button" data-filter="commerce">E-commerce</button>
+        <button class="filter-chip" type="button" data-filter="food">Food</button>
+        <button class="filter-chip" type="button" data-filter="interiors">Interiors</button>
+        <button class="filter-chip" type="button" data-filter="other">More</button>
+      </div>
+
+      <div class="demo-grid" id="demoGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section motion-section" id="motion">
+      <div class="motion-heading reveal">
+        <div>
+          <div class="section-kicker">03 / Video editing</div>
+          <h2 class="display-title">Motion & Film.<br><span>Frame by frame.</span></h2>
+        </div>
+        <p>Playable edits, presented as work, not decoration. Tap any film to watch with full controls.</p>
+      </div>
+
+      <div class="film-grid" id="filmGrid">
+        <article class="film-card film-featured reveal" data-video="assets/videos/selected-wedding-film.mp4" data-title="Selected Wedding Film">
+          <div class="film-poster">
+            <img src="assets/posters/selected-wedding-film.jpg" alt="Selected Wedding Film preview" loading="lazy" />
+            <button class="play-button" type="button" aria-label="Play Selected Wedding Film">
+              <span class="play-icon">▶</span>
+              <span>Play film</span>
+            </button>
+            <div class="film-runtime">01:37</div>
+          </div>
+          <div class="film-info"><span>Featured film</span><h3>Selected Wedding Film</h3></div>
+        </article>
+
+        <article class="film-card reveal" data-video="assets/videos/mehndi-bride.mp4" data-title="Mehndi Bride">
+          <div class="film-poster">
+            <img src="assets/posters/mehndi-bride.jpg" alt="Mehndi Bride video preview" loading="lazy" />
+            <button class="play-button compact" type="button" aria-label="Play Mehndi Bride"><span class="play-icon">▶</span></button>
+            <div class="film-runtime">02:50</div>
+          </div>
+          <div class="film-info"><span>Wedding edit</span><h3>Mehndi Bride</h3></div>
+        </article>
+
+        <article class="film-card reveal" data-video="assets/videos/wedding-song.mp4" data-title="Wedding Song">
+          <div class="film-poster">
+            <img src="assets/posters/wedding-song.jpg" alt="Wedding Song video preview" loading="lazy" />
+            <button class="play-button compact" type="button" aria-label="Play Wedding Song"><span class="play-icon">▶</span></button>
+            <div class="film-runtime">00:24</div>
+          </div>
+          <div class="film-info"><span>Music edit</span><h3>Wedding Song</h3></div>
+        </article>
+
+        <article class="film-card reveal" data-video="assets/videos/wedding-song-two.mp4" data-title="Wedding Song II">
+          <div class="film-poster">
+            <img src="assets/posters/wedding-song-two.jpg" alt="Wedding Song II video preview" loading="lazy" />
+            <button class="play-button compact" type="button" aria-label="Play Wedding Song II"><span class="play-icon">▶</span></button>
+            <div class="film-runtime">00:49</div>
+          </div>
+          <div class="film-info"><span>Wedding edit</span><h3>Wedding Song II</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="about">
+      <div class="section-kicker reveal">04 / What I do</div>
+      <div class="capabilities-grid">
+        <div class="capabilities-copy reveal">
+          <h2 class="display-title">Built across<br><span>disciplines.</span></h2>
+          <p>From the first wireframe to the last hover state, I combine design thinking, development and motion to make digital work feel coherent.</p>
+        </div>
+        <div class="capability-list">
+          <div class="capability-item reveal"><span>01</span><h3>Web Design & Development</h3><p>Responsive business sites, portfolios and modern web experiences.</p></div>
+          <div class="capability-item reveal"><span>02</span><h3>UI / UX & Interaction</h3><p>Clear structure, polished interfaces, scroll storytelling and micro-interactions.</p></div>
+          <div class="capability-item reveal"><span>03</span><h3>Firebase, PWA & Integrations</h3><p>Authentication, data-backed interfaces, progressive web apps and practical integrations.</p></div>
+          <div class="capability-item reveal"><span>04</span><h3>AI & Automation</h3><p>AI-assisted workflows, n8n automation and conversational product concepts.</p></div>
+          <div class="capability-item reveal"><span>05</span><h3>Video Editing</h3><p>Wedding edits, cinematic cuts, pacing, transitions and presentation-ready films.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-panel">
+      <div class="about-number reveal">AJAY / 2026</div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">About</p>
+        <h2>Ajay Saini is the creator behind <span>AJAY NXT</span>, focused on modern websites, interactive digital experiences and motion-led creative work.</h2>
+        <p>I care about the part users feel before they can explain it: rhythm, clarity, responsiveness and the tiny details that make a website feel finished.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="eyebrow reveal">Have a project in mind?</p>
+        <h2 class="contact-title reveal">Let's make the<br><span>next thing.</span></h2>
+        <div class="contact-actions reveal">
+          <a class="primary-action" href="mailto:ajayx3neha@gmail.com">ajayx3neha@gmail.com <span>↗</span></a>
+          <a class="secondary-action" href="https://wa.me/919929562585" target="_blank" rel="noopener noreferrer">WhatsApp <span>↗</span></a>
+        </div>
+
+        <div class="social-grid reveal">
+          <a href="https://www.instagram.com/ajay_nxt_/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><b>@ajay_nxt_</b><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/ajaynxt/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><b>Ajay NXT</b><i>↗</i></a>
+          <a href="https://x.com/Ajay_Nxt_" target="_blank" rel="noopener noreferrer"><span>X</span><b>@Ajay_Nxt_</b><i>↗</i></a>
+          <a href="https://www.threads.com/@ajay_nxt_" target="_blank" rel="noopener noreferrer"><span>Threads</span><b>@ajay_nxt_</b><i>↗</i></a>
+          <a href="https://www.facebook.com/share/1JEe6e7LYB/" target="_blank" rel="noopener noreferrer"><span>Facebook</span><b>AJAY NXT</b><i>↗</i></a>
+          <a href="https://ajaynxt.com/" target="_blank" rel="noopener noreferrer"><span>Website</span><b>ajaynxt.com</b><i>↗</i></a>
+        </div>
+
+        <footer class="footer">
+          <div><strong>AJAY NXT</strong><span>Creative Web Developer · Video Editor</span></div>
+          <div><a href="tel:+919929562585">+91 99295 62585</a><span>© <span id="year"></span> AJAY NXT</span></div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" hidden>
+    <div class="video-modal-backdrop" data-close-modal></div>
+    <div class="video-modal-panel">
+      <div class="video-modal-head">
+        <h2 id="videoModalTitle">Video</h2>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close video">×</button>
+      </div>
+      <video id="modalVideo" controls playsinline preload="metadata"></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
